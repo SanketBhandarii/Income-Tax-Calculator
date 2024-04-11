@@ -1,5 +1,5 @@
 
-INCOME TAX CALCULATOR
+<h1>INCOME TAX CALCULATOR</h1>
 
 A simple web app developed with HTML, CSS, and JavaScript for estimating taxes based on income, age, and deductions.
 
