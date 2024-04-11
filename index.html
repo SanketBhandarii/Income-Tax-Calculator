@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="msg">Please fill all the details</h1>
+      <h2>Tax <span>Calculator</span></h2>
+      <label for="age">Age Group:</label>
+      <select id="age">
+        <option value="<40">Less than 40</option>
+        <option value=">=40 - <60">40 to 60</option>
+        <option value=">=60">60 and above</option></select
+      ><br /><br />
+      <label for="income">Gross Annual Income (in Lakhs):</label>
+      <input type="text" id="income" oninput="handleInput(event)" />
+      <span class="error-icon" id="income-error-icon">!</span><br>
+      <label for="extraIncome">Extra Income (in Lakhs):</label>
+      <input type="text" id="extraIncome" oninput="handleInput(event)" />
+      <span class="error-icon" id="extraIncome-error-icon">!</span>
+      <label for="deductions">Deductions (in Lakhs):</label>
+      <input type="text" id="deductions" oninput="handleInput(event)" />
+      <span class="error-icon" id="deductions-error-icon">!</span>
+      <button onclick="calculateTax()" class="btn1">Calculate Tax</button>
+      <div id="popup" class="popup">
+        <div id="result1">Tax Amount:</div>
+        <div id="result2">Overall Income:</div>
+        <button class="btn2" onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  background-color: #f9f9f9;
+  color: #333;
+}
+#msg {
+  font-size: 20px;
+  display: none;
+}
+.container {
+  max-width: 370px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+}
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.btn1 {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-color: #e64a19;
+}
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+#result1 {
+  padding-top: 20px;
+}
+#result2 {
+  padding-top: 15px;
+}
+.popup {
+  background-color: #333;
+  width: 250px;
+  height: 130px;
+  padding: 30px;
+  color: #eee;
+  font-size: 19px;
+  position: absolute;
+  top: -250px;
+  transition: 0.2s linear all;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.btn2 {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #ff5722;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2:hover {
+  background-color: #e64a19;
+}
+span {
+  color: #e64a19;
+}
+#error {
+  font-size: 15px;
+  background-color: rgb(44, 43, 43);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  opacity: 0;
+}
+.error-icon {
+  display: none;
+  margin-left: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  background-color: #333;
+  padding: 2px 9px;
+  border-radius: 50%;
+}
+
+.error-icon:hover::after {
+  content: attr(data-error-message);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 412px) {
+  body {
+    padding: 0px 20px;
+  }
+  input[type="text"] {
+    width: 84%;
+  }
+  .btn1 {
+    width: 84%;
+  }
+}
